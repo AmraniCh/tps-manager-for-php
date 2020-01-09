@@ -1,0 +1,42 @@
+create table Classe(
+    codeClasse varchar(100) primary key,
+    filiere varchar(100) not null,
+    num int not null
+);
+
+create table Matieres(
+    codeMat varchar(100) primary key,
+    designation varchar(100) not null
+);
+
+create table Etudiant(
+    CNE varchar(100) primary key,
+    nom varchar(100) not null,
+    codeClasse varchar(100) not null,
+    constraint fk_codeClasse foreign key(codeClasse) references Classe(codeClasse)
+);
+
+create table notes(
+    codeMat varchar(100),
+    CNE varchar(100),
+   	primary key(codeMat, CNE),
+    note float not null,
+    constraint fk_codeMat foreign key(codeMat) references Matier(codeMat),
+    constraint fk_CNE foreign key(CNE) references Etudiant(CNE)
+);
+
+insert into Classe values("Classe-55", "Developpement Web", 55);
+insert into Classe values("Classe-99", "Multimedia", 99);
+insert into Classe values("Classe-80", "Multimedia", 99);
+
+insert into Etudiant values("AZ5555", "ahmed", "classe-55");
+insert into Etudiant values("AETTTZ", "chakir", "classe-80");
+insert into Etudiant values("AZ55DD", "firdaws", "classe-99");
+
+  insert into Matieres values("888DD", "PHP");
+  insert into Matieres values("AZB874", "JAVA");
+  insert into Matieres values("RRZZA", "C#");
+
+  insert into notes values("888DD", "AZ5555", 9);
+  insert into notes values("AZB874", "AETTTZ", 18);
+  insert into notes values("RRZZA", "AZ55DD", 14);

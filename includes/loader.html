@@ -1,0 +1,15 @@
+<div id="loader" class="loader-overlay">
+  <div class="loader">
+  </div>
+</div>
+<script>
+  function loader($action = "show"){
+    if( $action == "hide" ){
+      setTimeout(function(){
+        document.getElementById("loader").classList.remove("active");
+      }, 500);
+    }
+    else
+      document.getElementById("loader").classList.add("active");
+  }
+</script>

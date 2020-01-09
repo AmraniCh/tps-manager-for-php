@@ -1,0 +1,3 @@
+Nombre de lignes : 2
+Nombre des chiffres : 4
+Nombre des caractères : 23

@@ -1,0 +1,244 @@
+/* Header */
+.header{
+  padding: 3px 20px;
+  background-color: var(--primary);
+  color: #FFF;
+  box-shadow: 0 2px 3px 1px #333;
+  height: 60px;
+}
+
+.header .brand a{ text-decoration: none; color: #FFF }
+
+.header .brand a h1{
+  margin: 0;
+  padding: 0;
+  font-size: 2.4em;
+  font-weight: 500;
+  line-height: 54px
+}
+
+.header .brand,
+.header .user-info,
+.header .user-img{ height: 100%}
+
+.header .user-info{
+  margin-right: 40px
+}
+
+.header .user-info .owner{
+  font-weight: 500;
+  margin-right: 15px
+}
+
+.header .user-info .conn-status{
+  display: inline-block;
+}
+
+.header .user-info ul,
+.header .user-info > span { line-height: 54px}
+
+.header .user-img .img{
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #EEE;
+  border: 1px solid #333;
+  margin-top: 2px;
+  background-image: url('../assets/face02.jpg');
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.header .user-img{ margin-right: 20px }
+
+.conn-status li{ vertical-align: sub }
+
+/* Section Header */
+.section-hdr{margin-top: 50px}
+
+.section-hdr .inner-section-hdr{ padding: 0 18px;}
+
+.section-hdr .sec-hdr-left h1{ display: inline-block; vertical-align: middle; margin-right: 20px }
+
+.section-hdr .sec-hdr-right ul li{ display: inline-block }
+
+.section-hdr .sec-hdr-right ul li:first-child{ margin-right: 15px}
+
+.section-hdr .line{ height: 2px; background-color: #D4D0D0; margin-top: 8px}
+
+.section-hdr .sec-hdr-right div.btn:first-child{ margin-right: 12px }
+
+.section-hdr .sec-hdr-right a{ display: inline-block }
+
+/* Main Section */
+.main-section{ margin-top: 30px; overflow: hidden }
+
+.main-section .row{ margin-bottom: 30px; padding: 5px}
+
+.main-section .row .box:not(:first-of-type){ margin-left: 2.66%}
+
+.main-section .big-add-box{ background-color: var(--accent) }
+
+.main-section .big-add-box:hover{  }
+
+.main-section .big-add-box .line{
+  position: relative;
+  display: inline-block;
+  height: 12px;
+  width: 120px  ;
+  background-color: #FFF;
+  border-radius: 5px
+}
+
+.main-section .big-add-box .horizontal-line .vertical-line{
+  position: absolute;
+  transform: rotate(90deg);
+  left: 0
+}
+
+.box{
+  width: 23%;
+  height: 200px;
+  text-align: center;
+  line-height: 188px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px 2px #EEE;
+  cursor: pointer
+}
+
+.course-box{
+  background-color: #eee;
+  line-height: normal;
+  background-color: var(--secondary);
+  position: relative
+}
+
+.course-box .course-title{
+  padding: 20px;
+  height: 165px;
+  display: table;
+  margin: 0 auto;
+  color: #FFF
+}
+
+.course-box .course-title h2{
+  font-size: 1.5em;
+  font-weight: 500;
+  display: table-cell;
+  vertical-align: middle
+}
+
+.course-box .course-info{
+  height: 35px;
+  background-color: #FFF;
+  padding: 3px 8px;
+  line-height: 29px;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden
+}
+
+.course-name{ color: var(--label); width: calc(100% - 70px); word-break: break-all; text-align: left}
+.course-date{ font-size: 0.8em; color: #757575 }
+
+.course-box .delete-icon{ position: absolute; right: 8px; top: 6px }
+
+.course-box.selected{ box-shadow: 0 0 0 3px #333 }
+
+/* Navigation section */
+.nav-section{ text-align: center; margin: 20px 0 60px}
+
+.nav-section .pagination-btns{ margin: 0 auto }
+
+.next-btn-relative{ position: relative }
+
+.nav-section .next-btn{
+  position: absolute;
+  right: 0; top: 0
+}
+
+/* overlay box */
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .6);
+  z-index: 99
+}
+
+.overlay .overlay-box{
+  position: absolute;
+   padding: 20px;
+  width: 400px;
+  height: 430px;
+  margin: auto;
+  z-index: 999;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  background-color: #FFF;
+  border-radius: 12px;
+  box-shadow: 0 0 5px 2px #333, 0 15px 15px -6px #333
+}
+
+.overlay .overlay-box .action{ text-align: center; margin: 20px 0}
+
+.overlay .overlay-box .close-box {
+  color: #333;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 1.5em
+}
+
+.overlay .overlay-box .close-box:before{ font-weight: 900 }
+
+.overlay .overlay-box .file-name{ margin-left: 5px; color: #333; font-size: .9em; font-weight: 500}
+
+/* Accordion Content */
+.accordion-section .accordion-content .editor-language .light-select{
+  display: block;
+  padding: 12px 20px;
+  color: #999;
+  width: 100%;
+  border: 1px solid #DDD;
+  font-size: 1.2em
+}
+
+.CodeMirror{
+  font-family: arial;
+  font-size: 1.2em;
+  border-radius: 3px;
+}
+
+.accordion-section .accordion-content .accordion-actions{ text-align: center; margin-top: 14px; font-size: .9em }
+.accordion-section .accordion-content .accordion-actions > div:first-child{ margin-right: 20px}
+
+/* loader */
+.loader-overlay.active{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.loader-overlay.active .loader{
+  position: fixed;
+  top: 0; right: 0;
+  bottom: 0; left: 0;
+  height: 80px;
+  width: 80px;
+  margin: auto;
+  border-radius: 50%;
+  border: 10px #FFF solid;
+  border-top: 10px var(--secondary) solid;
+  animation: animate .5s infinite linear;
+}
+@keyframes animate{
+  0%{ transform: rotate(0)}
+  100%{ transform: rotate(360deg)}
+}

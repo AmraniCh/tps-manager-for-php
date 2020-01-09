@@ -1,0 +1,24 @@
+/*****************
+  keyframes
+*****************/
+
+@keyframes dropdownAnim {
+  from { opacity: 0; transform: translateY(-30px) }
+  to { opacity: 1; transform: translateY(0) }
+}
+.filter-dropdown{ animation: dropdownAnim .3s }
+
+@keyframes accordionDropdownAnim {
+  from { opacity: 0; transform: translateY(-10px) }
+  to { opacity: 1 }
+}
+.accordion-content{ animation: accordionDropdownAnim .7s }
+
+@keyframes overlayDropdownAnim{
+  from{ opacity: 0; }
+  to { opacity: 1; }
+}
+
+.overlay{
+  animation: overlayDropdownAnim .5s;
+  }
